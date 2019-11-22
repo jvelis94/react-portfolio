@@ -171,7 +171,7 @@ text-align: center;
   margin: 0 auto;
 }
 
-.home-blurb h1, .about-me h1, .experience h1, .projects h1 {
+h3 {
   padding-bottom: 32px;
 }
 
@@ -325,11 +325,12 @@ h1 {
   }
 
   #about-img img {
-    width: 50%;
+    width: 75%;
     text-align: center;
   }
 
   #about-img {
+    width: 100%;
     margin-top: 12px;
     text-align: center;
   }
