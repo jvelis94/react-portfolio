@@ -42,7 +42,7 @@ class Projects extends React.Component {
         
         return (
             <div class='projects'>
-                <h1>My Notable Projects</h1>
+                <h1>Notable Projects</h1>
                 <div class='project-list'>
                     {this.state.projects.map(project => (
                         <div id='project-item'>
