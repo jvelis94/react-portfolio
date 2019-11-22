@@ -159,8 +159,7 @@ text-align: center;
 
 /* Top */
 .page-top {
-  margin-top: 250px;
-  height: 85vh;
+  margin: 125px 0px 48px 0px;
   color: #8892B0;
 }
 

@@ -4,7 +4,7 @@ import portrait from '../images/portrait.jpeg'
 class AboutMe extends React.Component {
     render() {
         return (
-            <div class='about-me'>
+            <div class='about-me' id='about-me'>
                 <section id='about-text'>
                     <h3>About Me</h3>
                     

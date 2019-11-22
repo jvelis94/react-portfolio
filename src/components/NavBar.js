@@ -23,9 +23,9 @@ class Navbar extends React.Component {
                     </div>
                     <div className='nav-options'>
                         <ul className='nav-list'>
-                            <li><a href='/' >About</a> </li>
-                            <li><a href='/portfolio'>Portfolio</a> </li>
-                            <li><a href='/contact'>Contact</a> </li>
+                            <li><a href='/#about-me' >About</a> </li>
+                            <li><a href='/#experience'>Experience</a> </li>
+                            <li><a href='/#projects'>Portfolio</a> </li>
                             <li><a href='/resume'>Resume</a> </li>
                         </ul>
                     </div>
@@ -41,9 +41,9 @@ class Navbar extends React.Component {
                     </div>
                     <div className='nav-options'>
                         <ul className='nav-list-mobile'>
-                            <li><a href='/' >About</a> </li>
-                            <li><a href='/portfolio'>Portfolio</a> </li>
-                            <li><a href='/contact'>Contact</a> </li>
+                            <li><a href='/#about-me' >About</a> </li>
+                            <li><a href='/#experience'>Experience</a> </li>
+                            <li><a href='/#projects'>Portfolio</a> </li>
                             <li><a href='/resume'>Resume</a> </li>
                         </ul>
                     </div>
