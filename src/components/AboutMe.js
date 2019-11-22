@@ -11,7 +11,7 @@ class AboutMe extends React.Component {
                     
                     <p>I am a software developer based in New York City who loves building web applications with a broader goal in mind. I aim to build websites that put the user experience above all, regardless of the device they use to access it</p>
                     <p>I started my career in Finance working in product strategy for the largest investment manager in the world. After three years in the industry, I fell in love with coding</p>
-                    <p>Below are a list of technologies I feel comfortable working with. I am also ready and willing to learn anythign new!</p>
+                    <p>Below are a list of technologies I feel comfortable working with. I am also ready and willing to learn anything new!</p>
 
                     <div id='tech-list'>
                         <ul style={{marginRight: '56px'}}>
