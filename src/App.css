@@ -62,13 +62,19 @@ body {
 .nav-list li a {
   padding: 10px 20px;
   font-weight: bold;
-  color: white;
+  color: #8892B0;
   text-decoration: none;
 }
 
+.nav-list li a:hover, .nav-list-mobile li a:hover {
+  color: #09d3ac;
+}
+
 .nav-list li:last-child a {
-  color: #0B2240; 
-  background-color: #ffffff;
+  color: #09d3ac;
+  background-color: #0D2340;
+  border: 0.5px solid #09d3ac;
+  border-radius: 5px;
 }
 
 .mobile-nav {
@@ -100,19 +106,19 @@ body {
 
   .nav-list-mobile li a{
       display: block;
-      background-color: #222222;
-      color: #ffffff;
-      border-top: 0.5px solid #444444;
+      background-color: #0D2340;
+      color: #8892B0;
+      border-bottom: 0.5px solid #09d3ac;
       text-decoration: none;
       padding: 5px 0;
       font-weight: bold;
   }
 
-  .nav-list-mobile li:last-child a {
+  /* .nav-list-mobile li:last-child a {
       background-color: #ffffff;
       color: #000000;
       border: 0.5px solid #ffffff;
-  }
+  } */
 
   .nav-bar-size {
       padding: 20px 0px;
