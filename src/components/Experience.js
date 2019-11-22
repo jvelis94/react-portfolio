@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../images/J.png'
 import ExperienceSidebar from './ExperienceSidebar'
 import ExperienceInfo from './ExperienceInfo'
-import { Tab, Row, Col, Nav } from 'react-bootstrap/'
+import { Tabs, Tab, Row, Col, Nav } from 'react-bootstrap/'
 
 class Experience extends React.Component {
     constructor(props) {
@@ -72,7 +72,7 @@ class Experience extends React.Component {
         return (
             <div class='experience'>
                 <h1>Some Work History</h1>
-                <div id='work-history'>
+                <div id='work-history-desktop'>
                     <Tab.Container id="left-tabs-example" defaultActiveKey={1}>
                         <Row>
                             <Col sm={2}>
@@ -95,6 +95,15 @@ class Experience extends React.Component {
                             </Col>
                         </Row>
                     </Tab.Container>                    
+                </div>
+                <div id='work-history-mobile'>
+                    <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
+                        {this.state.jobs.map(job => (
+                            <Tab eventKey={job.id} title={job.company}>
+                                <ExperienceInfo job = {job} />
+                            </Tab>
+                        ))}
+                    </Tabs>
                 </div>
             </div>
         )
