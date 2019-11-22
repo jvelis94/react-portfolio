@@ -9,8 +9,7 @@ class Top extends React.Component {
                     <h1 style={{color: '#ffffff'}}>Joel Velis.</h1>
                     <h1 style={{ color: '#8892B0'}}>I'm a thinker, and a builder.</h1>
 
-                    <p>I am a software developer based in New York City</p>
-                    <p>who loves building web applications with a broader goal in mind. </p>
+                    <p>I am a software developer based in New York City who loves building web applications with a broader goal in mind. </p>
                 </div>
             </div>
         )

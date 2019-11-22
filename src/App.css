@@ -197,6 +197,7 @@ text-align: center;
 .about-me {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 #about-text {
@@ -251,7 +252,7 @@ h1 {
   }
   
   h1 {
-    font-size: 2rem !important;
+    font-size: 3rem !important;
   }
 }
 
@@ -296,6 +297,14 @@ h1 {
   color: #8892B0;
 }
 
+#about-img {
+  width: 30%;
+}
+
+#about-img img {
+  width: 100%;
+}
+
 @media (max-width: 1000px) {
   #work-history-desktop {
     display: none;
@@ -312,7 +321,7 @@ h1 {
 
   .nav {
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
   }
 
   #about-img img {
@@ -321,6 +330,7 @@ h1 {
   }
 
   #about-img {
+    margin-top: 12px;
     text-align: center;
   }
   
@@ -336,7 +346,7 @@ h1 {
 }
 
 #project-item {
-  margin: 10px;
+  margin: 16px;
 }
 
 .react-card-flip {
@@ -383,4 +393,11 @@ button {
 }
 /* end of projects */
 
+h3 {
+  color: white;
+}
 
+::-webkit-scrollbar {
+  background: none;
+  height: 0px;
+}
