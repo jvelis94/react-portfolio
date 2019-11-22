@@ -250,6 +250,10 @@ h1 {
     color: #8892B0;
   }
   
+  #my-name {
+    font-size: 4rem !important;
+  }
+
   h1 {
     font-size: 3rem !important;
   }
