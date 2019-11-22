@@ -1,12 +1,12 @@
 import React from 'react';
-import logo from '../images/J.png'
+import portrait from '../images/portrait.jpeg'
 
 class AboutMe extends React.Component {
     render() {
         return (
             <div class='about-me'>
                 <section id='about-text'>
-                    <h1>About Me</h1>
+                    <h3>About Me</h3>
                     
                     <p>I am a software developer based in New York City who loves building web applications with a broader goal in mind. I aim to build websites that put the user experience above all, regardless of the device they use to access it</p>
                     <p>I started my career in Finance working in product strategy for the largest investment manager in the world. After three years in the industry, I fell in love with coding</p>
@@ -26,7 +26,7 @@ class AboutMe extends React.Component {
                     </div>
                 </section>
                 <section id='about-img'>
-                    <img src={logo} />
+                    <img src={portrait} />
                 </section>
             </div>
         )
