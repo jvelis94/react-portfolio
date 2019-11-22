@@ -71,7 +71,7 @@ class Experience extends React.Component {
         
         return (
             <div class='experience' id='experience'>
-                <h3>Some Work History</h3>
+                <h3 class='titles-other'>Some Work History</h3>
                 <div id='work-history-desktop'>
                     <Tab.Container id="left-tabs-example" defaultActiveKey={1}>
                         <Row>

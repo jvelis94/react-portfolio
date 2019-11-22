@@ -312,6 +312,7 @@ h1 {
 
 #about-img img {
   width: 100%;
+  border-radius: 25px;
 }
 
 @media (max-width: 1000px) {
@@ -411,3 +412,64 @@ h3 {
   background: none;
   height: 0px;
 }
+
+.titles:after {
+  background-color: #8892B0;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  /* margin-left: 12px; */
+}
+
+.titles:after {
+  background-color: #8892B0;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+  /* margin-left: 12px; */
+}
+
+.titles:after {
+  left: 0.5em;
+  margin-right: -50%;
+ }
+
+ .titles-other:after {
+  background-color: #8892B0;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 75%;
+  /* margin-left: 12px; */
+}
+
+.titles-other:after {
+  left: 0.5em;
+  margin-right: -50%;
+ }
+
+ @media (max-width: 1000px) {
+  .titles-other:after {
+    background-color: #8892B0;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+    /* margin-left: 12px; */
+  }
+  
+  .titles-other:after {
+    left: 0.5em;
+    margin-right: -50px;
+   }
+ }
