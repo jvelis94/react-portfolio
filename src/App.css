@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #0C2340;
 }
 
 .App-logo {
@@ -20,3 +21,280 @@
 .App-link {
   color: #09d3ac;
 }
+
+#logoImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Nav Styling */
+
+.nav-bar-size {
+  padding: 20px 5%;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  
+}
+
+.nav-logo p {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+}
+
+.nav-list li a {
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list li:last-child a {
+  color: #0B2240; 
+  background-color: #ffffff;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.nav-container-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+@media (max-width: 1000px) {
+  .nav-container {
+      display: none
+  }
+
+  .mobile-nav {
+      display: contents;
+  }
+
+  .nav-list-mobile {
+      display: none;
+      list-style: none;
+      text-align: center;
+      padding-inline-start: 0px;
+      margin-top: 15px;
+  }
+
+  .nav-list-mobile li a{
+      display: block;
+      background-color: #222222;
+      color: #ffffff;
+      border-top: 0.5px solid #444444;
+      text-decoration: none;
+      padding: 5px 0;
+      font-weight: bold;
+  }
+
+  .nav-list-mobile li:last-child a {
+      background-color: #ffffff;
+      color: #000000;
+      border: 0.5px solid #ffffff;
+  }
+
+  .nav-bar-size {
+      padding: 20px 0px;
+  }
+
+  .nav-container-mobile {
+      padding: 5px 8%;
+  }
+
+}
+
+/* End of Nav Styling */
+
+/* Footer */
+footer {
+  background-color: #222222;
+}
+
+footer ul {
+  margin: 0;
+  color: #ffffff;
+  padding: 20px 100px;
+  font-size: 40px;
+  text-align: center;
+}
+
+footer li {
+display: inline-block;
+padding: 8px 54px;
+text-align: center;
+}
+
+@media (max-width: 1000px) {
+  footer ul {
+      padding: 20px 60px;
+  }
+
+  footer li {
+      padding: 8px 12px;
+    }
+}
+
+/* End of Footer */
+
+/* Top */
+.page-top {
+  margin-top: 250px;
+  height: 85vh;
+  color: #8892B0;
+}
+
+.home-blurb, .about-me, .experience, .projects {
+  width: 75%;
+  padding: 48px 0px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.home-blurb h1, .about-me h1, .experience h1, .projects h1 {
+  padding-bottom: 32px;
+}
+
+.home-blurb h1 {
+  font-size: 5rem;
+}
+
+.home-blurb p {
+  font-size: 1.2rem;
+}
+
+/* AboutMe */
+.about-me {
+  display: flex;
+  justify-content: space-between;
+}
+
+#about-text {
+  width: 50%;
+  color: #8892B0;
+}
+
+.about-me ul, .experience ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.about-me li, .experience li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.about-me li:before, .experience li:before {
+  content: "▹";
+  padding-right: 5px;
+  color: #09d3ac;
+}
+
+#tech-list {
+  display: flex;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+/* Experience */
+#work-history, h3 {
+  /* width: 60%; */
+  /* display: flex; */
+  color: #8892B0;
+  text-align: left;
+}
+
+
+
+#job-info {
+  margin-left: 56px;
+  text-align: left;
+}
+
+.nav-link {
+  color: #8892B0;
+  background-color: none !important;
+}
+
+.nav-link.active {
+  color: #09d3ac;
+  border-left: 0.5px solid #09d3ac;
+  border-radius: 0;
+  background-color: none !important;
+}
+/* end of experience */
+
+/* projects */
+.project-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#project-item {
+  margin: 10px;
+}
+
+.react-card-flip {
+  /* width: 18rem;
+  height: 350px; */
+  border: 0.5px solid #09d3ac;
+  border-radius: 5px;
+}
+
+.react-card-flipper {
+  margin: 0;
+}
+
+.project-info {
+  width: 250px;
+  height: 350px;
+  color: #8892B0;
+}
+
+.project-info ul {
+  list-style-type: none;
+  padding: 16px 0;
+  width: 85%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.project-info h3 {
+  padding: 16px;
+  word-wrap: break-word;
+  color: #09d3ac;
+}
+
+button {
+  padding: 8px 24px;
+  border: 0.5px solid #09d3ac;
+  background-color: #0D2340;
+  border-radius: 5px;
+}
+
+.links {
+  text-decoration: none;
+  color: #09d3ac;
+}
+
+
