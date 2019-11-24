@@ -16,8 +16,10 @@ class Experience extends React.Component {
                     start_date: 'October 2019',
                     end_date: 'Present',
                     description: [
-                        'Build components using React',
-                        'Collaborating with founder and two developers to build a web app offering flexible jobs for parenting professionals'
+                        'Collaborate with Founder, CTO and Senior Developer to build a web app offering flexible jobs for parenting professionals',
+                        'Collaborate with CTO and Senior Developer to implement new feature developments',
+                        'Build page components using React',
+
                     ]
                 },
                 {   
@@ -28,7 +30,7 @@ class Experience extends React.Component {
                     end_date: 'Present',
                     description: [
                         'Built and maintaining CRM app for constrution company using Ruby on Rails',
-                        'Built company website for fencing company in New Jersey using React'
+                        'Built company website for fencing company using React'
                     ]
                 },
                 {
