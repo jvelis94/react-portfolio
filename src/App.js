@@ -1,10 +1,11 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Top from './components/Top';
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
 import Projects from './components/Projects'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Sidebar from './components/Sidebar';
 
 
 import './App.css';
@@ -17,6 +18,7 @@ function App() {
       <AboutMe />
       <Experience />
       <Projects />
+      <Sidebar />
     </div>
   );
 }
