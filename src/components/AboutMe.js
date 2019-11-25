@@ -4,9 +4,9 @@ import portrait from '../images/portrait.jpeg'
 class AboutMe extends React.Component {
     render() {
         return (
-            <div class='about-me' id='about-me'>
+            <div className='about-me' id='about-me'>
                 <section id='about-text'>
-                    <h3 class='titles'>About Me</h3>
+                    <h3 className='titles'>About Me</h3>
                         
                     
                     <p>I am a software developer based in New York City who loves building web applications with a broader goal in mind. I aim to build websites that put the user experience above all, regardless of the device they use to access it</p>
@@ -27,7 +27,7 @@ class AboutMe extends React.Component {
                     </div>
                 </section>
                 <section id='about-img'>
-                    <img src={portrait} />
+                    <img src={portrait} alt='joel portrait' />
                 </section>
             </div>
         )

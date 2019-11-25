@@ -4,7 +4,7 @@ class Top extends React.Component {
     render() {
         return (
             <div className='page-top'>
-                <div class='home-blurb'>
+                <div className='home-blurb'>
                     <p style={{color: '#64FFD9'}}>Hi, my name is</p>
                     <h1 id='my-name' style={{color: '#ffffff'}}>Joel Velis.</h1>
                     <h1 style={{ color: '#8892B0'}}>I'm a thinker, and a builder.</h1>

@@ -19,7 +19,7 @@ class Navbar extends React.Component {
             <div className='nav-bar-size'>
                 <div className='nav-container'>
                     <div className='nav-logo'>
-                        <p style={{margin: '0', fontWeight: 'bold', color: '#ffffff'}}><img id='logoImage' src={logo} /></p>
+                        <p style={{margin: '0', fontWeight: 'bold', color: '#ffffff'}}><img id='logoImage' src={logo} alt='logo'/></p>
                     </div>
                     <div className='nav-options'>
                         <ul className='nav-list'>
@@ -33,11 +33,11 @@ class Navbar extends React.Component {
                 <div className='mobile-nav'>
                     <div className='nav-container-mobile'>
                         <div className='nav-logo'>
-                            <p style={{margin: '0', color: '#ffffff'}}><img id='logoImage' src={logo} /></p>
+                            <p style={{margin: '0', color: '#ffffff'}}><img id='logoImage' src={logo} alt='logo' /></p>
                         </div>
-                        <a href="javascript:void(0);" style={{color: 'black', fontSize: '24px'}} className="icon" onClick={this.handleBarClick}>
+                        <button id='hamburger' style={{color: 'black', fontSize: '24px'}} className="icon" onClick={this.handleBarClick}>
                             <FontAwesomeIcon icon={faBars} style={{color: '#ffffff'}} />
-                        </a>
+                        </button>
                     </div>
                     <div className='nav-options'>
                         <ul className='nav-list-mobile'>

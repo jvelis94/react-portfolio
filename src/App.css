@@ -358,6 +358,9 @@ h1 {
 
 #project-item {
   margin: 16px;
+  width: 245px;
+  height: 350px;
+  color: #8892B0;
 }
 
 .react-card-flip {
@@ -372,7 +375,7 @@ h1 {
 }
 
 .project-info {
-  width: 250px;
+  width: 245px;
   height: 350px;
   color: #8892B0;
 }
@@ -391,11 +394,16 @@ h1 {
   color: #09d3ac;
 }
 
-button {
+.project-buttons {
   padding: 8px 24px;
   border: 0.5px solid #09d3ac;
   background-color: #0D2340;
   border-radius: 5px;
+}
+
+#hamburger {
+  background-color: #0D2340;
+  border: none;
 }
 
 .links {

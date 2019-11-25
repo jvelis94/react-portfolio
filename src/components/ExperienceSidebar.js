@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from '../images/J.png'
 
 class ExperienceSidebar extends React.Component {
     render() {

@@ -16,21 +16,21 @@ class ProjectItem extends React.Component {
     render() {
       return (
         <ReactCardFlip isFlipped={this.state.isFlipped} flipDirection="horizontal">
-            <section class='project-info' onMouseEnter={this.handleHover}>
+            <section className='project-info' onMouseEnter={this.handleHover}>
                 <h3>{this.props.project.name}</h3>
                 <ul>
                     {this.props.project.technologies.map(tech => (
-                        <div>
+                        <div key={tech}>
                             <li style={{borderBottom: '0.5px solid #8892B0', padding: '12px'}}>{tech}</li>
                         </div>
                     ))}
                 </ul>
             </section>
-            <section class='project-info' onMouseLeave={this.handleHover}>
+            <section className='project-info' onMouseLeave={this.handleHover}>
                 <h3>{this.props.project.caption}</h3>
                 <ul style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <li><button><a class='links' href={this.props.project.demo_link}>Demo</a></button></li>
-                    <li><button><a class='links' href={this.props.project.github}>GitHub</a></button></li>
+                    <li><button className='project-buttons'><a className='links' href={this.props.project.demo_link}>Demo</a></button></li>
+                    <li><button className='project-buttons'><a className='links' href={this.props.project.github}>GitHub</a></button></li>
                 </ul>
             </section>
         </ReactCardFlip>

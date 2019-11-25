@@ -1,7 +1,4 @@
 import React from 'react';
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap/'
-import insta from '../images/insta.png'
-import ReactCardFlip from 'react-card-flip';
 import ProjectItem from './ProjectItem'
 
 
@@ -41,11 +38,11 @@ class Projects extends React.Component {
     render() {        
         
         return (
-            <div class='projects' id='projects'>
-                <h3 class='titles-other'>Notable Projects </h3>
-                <div class='project-list'>
+            <div className='projects' id='projects'>
+                <h3 className='titles-other'>Notable Projects </h3>
+                <div className='project-list'>
                     {this.state.projects.map(project => (
-                        <div id='project-item'>
+                        <div id='project-item' key={project.id}>
                             <ProjectItem project = {project} />
                         </div>
                     ))}

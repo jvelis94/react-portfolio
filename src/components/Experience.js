@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from '../images/J.png'
-import ExperienceSidebar from './ExperienceSidebar'
 import ExperienceInfo from './ExperienceInfo'
 import { Tabs, Tab, Row, Col, Nav } from 'react-bootstrap/'
 
@@ -72,15 +70,15 @@ class Experience extends React.Component {
     render() {        
         
         return (
-            <div class='experience' id='experience'>
-                <h3 class='titles-other'>Some Work History</h3>
+            <div className='experience' id='experience'>
+                <h3 className='titles-other'>Some Work History</h3>
                 <div id='work-history-desktop'>
                     <Tab.Container id="left-tabs-example" defaultActiveKey={1}>
                         <Row>
                             <Col sm={2}>
                                 <Nav className="flex-column">
                                     {this.state.jobs.map(job => (
-                                        <Nav.Item>
+                                        <Nav.Item key={job.id} >
                                             <Nav.Link eventKey={job.id}>{job.company}</Nav.Link>
                                         </Nav.Item>
                                     ))}
@@ -89,7 +87,7 @@ class Experience extends React.Component {
                             <Col sm={10}>
                                 <Tab.Content>
                                     {this.state.jobs.map(job => (
-                                        <Tab.Pane eventKey={job.id}>
+                                        <Tab.Pane key={job.id} eventKey={job.id}>
                                             <ExperienceInfo job = {job} />
                                         </Tab.Pane>
                                     ))}
@@ -101,7 +99,7 @@ class Experience extends React.Component {
                 <div id='work-history-mobile'>
                     <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
                         {this.state.jobs.map(job => (
-                            <Tab eventKey={job.id} title={job.company}>
+                            <Tab key={job.id} eventKey={job.id} title={job.company}>
                                 <ExperienceInfo job = {job} />
                             </Tab>
                         ))}
