@@ -361,6 +361,8 @@ h1 {
   width: 245px;
   height: 350px;
   color: #8892B0;
+  border: 0.5px solid #09d3ac;
+  border-radius: 5px;
 }
 
 .react-card-flip {
