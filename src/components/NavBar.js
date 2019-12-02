@@ -2,6 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import logo from '../images/J.png'
+import ScrollIntoView from 'react-scroll-into-view'
+import resume from '../../src/files/Joel_Velis.pdf'
 
 class Navbar extends React.Component {
 
@@ -22,12 +24,12 @@ class Navbar extends React.Component {
                         <p style={{margin: '0', fontWeight: 'bold', color: '#ffffff'}}><img id='logoImage' src={logo} alt='logo'/></p>
                     </div>
                     <div className='nav-options'>
-                        <ul className='nav-list'>
-                            <li><a href='/#about-me' >About</a> </li>
-                            <li><a href='/#experience'>Experience</a> </li>
-                            <li><a href='/#projects'>Portfolio</a> </li>
-                            <li><a href='/resume'>Resume</a> </li>
-                        </ul>
+                        <div className='nav-list'>
+                            <ScrollIntoView className='nav-items' selector='#about-me'>About</ScrollIntoView>
+                            <ScrollIntoView className='nav-items' selector='#experience'>Experience</ScrollIntoView>
+                            <ScrollIntoView className='nav-items' selector='#projects'>Projects</ScrollIntoView>
+                            <li className='nav-items'><a href={resume} rel="noopener noreferrer" target='_blank'>Resume</a> </li>
+                        </div>
                     </div>
                 </div>
                 <div className='mobile-nav'>
@@ -40,12 +42,12 @@ class Navbar extends React.Component {
                         </button>
                     </div>
                     <div className='nav-options'>
-                        <ul className='nav-list-mobile'>
-                            <li><a href='/#about-me' >About</a> </li>
-                            <li><a href='/#experience'>Experience</a> </li>
-                            <li><a href='/#projects'>Portfolio</a> </li>
-                            <li><a href='/resume'>Resume</a> </li>
-                        </ul>
+                        <div className='nav-list-mobile'>
+                            <ScrollIntoView className='nav-items' selector='#about-me'>About</ScrollIntoView>
+                            <ScrollIntoView className='nav-items' selector='#experience'>Experience</ScrollIntoView>
+                            <ScrollIntoView className='nav-items' selector='#projects'>Projects</ScrollIntoView>
+                            <li className='nav-items'><a href={resume} rel="noopener noreferrer" target='_blank'>Resume</a> </li>
+                        </div>
                     </div>
                 </div>
             </div>
