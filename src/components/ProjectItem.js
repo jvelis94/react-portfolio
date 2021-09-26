@@ -28,9 +28,10 @@ class ProjectItem extends React.Component {
             </section>
             <section className='project-info' onMouseLeave={this.handleHover}>
                 <h3>{this.props.project.caption}</h3>
+                <button className='project-buttons'><a className='links' href={this.props.project.demo_link}>Demo</a></button>
                 <ul style={{display: 'flex', justifyContent: 'space-between'}}>
-                    <li><button className='project-buttons'><a className='links' href={this.props.project.demo_link}>Demo</a></button></li>
-                    <li><button className='project-buttons'><a className='links' href={this.props.project.github}>GitHub</a></button></li>
+                    <li><button className='project-buttons'><a className='links' href={this.props.project.github_frontend}>Frontend</a></button></li>
+                    <li><button className='project-buttons'><a className='links' href={this.props.project.github_backend}>Backend</a></button></li>
                 </ul>
             </section>
         </ReactCardFlip>
