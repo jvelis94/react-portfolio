@@ -9,30 +9,23 @@ class Experience extends React.Component {
             jobs: [
                 {
                     id: 1,
-                    company: 'Miramom',
-                    title: 'Frontend Developer',
-                    start_date: 'October 2019',
-                    end_date: 'Present',
+                    company: 'Consilium Intelligence',
+                    title: 'Data Analyst / Web Developer / Business Analyst',
+                    start_date: 'December 2019',
+                    end_date: 'September 2021',
                     description: [
-                        'Collaborate with Founder, CTO and Senior Developer to build a web app offering flexible jobs for parenting professionals',
-                        'Collaborate with CTO and Senior Developer to implement new feature developments',
-                        'Build page components using React',
+                        'Built Python scripts to manipulate large spreadsheets, lowering the time to task completion from several hours to a few minutes',
+                        'Built web scrapers to collect data from several public sources on the web',
+                        'Wireframed, sketched (using Figma) and built the first iteration of our web application using Ruby on Rails and ES6; deployed to AWS EC2 and S3 buckets',
+                        'Worked with an agile team to migrate the web application to JavaScript, where I worked as a full-stack developer, creating a separate React app for the front-end that communicated with a back-end API',
+                        'Conducted thorough market research to better understand our target audience',
+                        'Worked directly with Founder and CEO to inform business decisions and presented research, code deployments and optimizations on a weekly basis',
+                        'Facilitated the closing of several tens of thousands of dollars of business by finalizing data and building one-time web apps that were then delivered to clients'
 
                     ]
                 },
-                {   
-                    id: 2,
-                    company: 'Freelance',
-                    title: 'Web Developer',
-                    start_date: 'July 2019',
-                    end_date: 'Present',
-                    description: [
-                        'Built and maintaining CRM app for constrution company using Ruby on Rails',
-                        'Built company website for fencing company using React'
-                    ]
-                },
                 {
-                    id: 3,
+                    id: 2,
                     company: 'BlackRock',
                     title: 'Senior Financial Analyst',
                     start_date: 'August 2016',
